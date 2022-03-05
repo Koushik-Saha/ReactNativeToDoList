@@ -22,7 +22,7 @@ const SplashScreen = ({navigation}) => {
             <Animatable.Image
                 animation="bounceIn"
                 duraton="1500"
-            source={require('../assets/logo.png')}
+            source={require('../assets/logo1.png')}
             style={styles.logo}
             resizeMode="stretch"
             />
@@ -55,7 +55,7 @@ const SplashScreen = ({navigation}) => {
 export default SplashScreen;
 
 const {height} = Dimensions.get("screen");
-const height_logo = height * 0.28;
+const height_logo = height * 0.24;
 
 const styles = StyleSheet.create({
   container: {
