@@ -17,14 +17,13 @@ import {
 } from '@react-navigation/drawer';
 
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
-
-import{ AuthContext } from '../context/context';
+import {useAuth} from "../context/auth-context";
 
 export function DrawerContent(props) {
 
     const paperTheme = useTheme();
 
-    const { signOut, toggleTheme } = React.useContext(AuthContext);
+    const { signOut, toggleTheme } = useAuth()
 
     return(
         <View style={{flex:1}}>
