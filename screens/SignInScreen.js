@@ -91,17 +91,17 @@ const SignInScreen = ({navigation}) => {
     const loginHandle = (userName, password) => {
 
         const foundUser = Users.filter( item => {
-            return userName == item.username && password == item.password;
+            return userName === item.username && password === item.password;
         } );
 
-        if ( data.username.length == 0 || data.password.length == 0 ) {
+        if ( data.username.length === 0 || data.password.length === 0 ) {
             Alert.alert('Wrong Input!', 'Username or password field cannot be empty.', [
                 {text: 'Okay'}
             ]);
             return;
         }
 
-        if ( foundUser.length == 0 ) {
+        if ( foundUser.length === 0 ) {
             Alert.alert('Invalid User!', 'Username or password is incorrect.', [
                 {text: 'Okay'}
             ]);
@@ -173,7 +173,7 @@ const SignInScreen = ({navigation}) => {
                 <TextInput
                     placeholder="Your Password"
                     placeholderTextColor="#666666"
-                    secureTextEntry={data.secureTextEntry ? true : false}
+                    secureTextEntry={!!data.secureTextEntry}
                     style={[styles.textInput, {
                         color: colors.text
                     }]}

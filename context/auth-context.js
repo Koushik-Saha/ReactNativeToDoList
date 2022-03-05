@@ -74,39 +74,30 @@ const AuthProvider = (props) => {
 
     const [loginState, dispatch] = React.useReducer(loginReducer, initialLoginState);
 
-    React.useMemo(() => ({
-        signIn: async(foundUser) => {
-            // setUserToken('fgkj');
-            // setIsLoading(false);
-            const userToken = String(foundUser[0].userToken);
-            const userName = foundUser[0].username;
+    const signIn = async(foundUser) => {
+        const userToken = String(foundUser[0].userToken);
+        const userName = foundUser[0].username;
 
-            try {
-                await AsyncStorage.setItem('userToken', userToken);
-            } catch(e) {
-                console.log(e);
-            }
-            // console.log('user token: ', userToken);
-            dispatch({ type: 'LOGIN', id: userName, token: userToken });
-        },
-        signOut: async() => {
-            // setUserToken(null);
-            // setIsLoading(false);
-            try {
-                await AsyncStorage.removeItem('userToken');
-            } catch(e) {
-                console.log(e);
-            }
-            dispatch({ type: 'LOGOUT' });
-        },
-        signUp: () => {
-            // setUserToken('fgkj');
-            // setIsLoading(false);
-        },
-        toggleTheme: () => {
-            setIsDarkTheme( isDarkTheme => !isDarkTheme );
+        try {
+            await AsyncStorage.setItem('userToken', userToken);
+        } catch(e) {
+            console.log(e);
         }
-    }), []);
+        dispatch({ type: 'LOGIN', id: userName, token: userToken });
+    }
+
+    const signOut = async(foundUser) => {
+        try {
+            await AsyncStorage.removeItem('userToken');
+        } catch(e) {
+            console.log(e);
+        }
+        dispatch({ type: 'LOGOUT' });
+    }
+
+    const toggleTheme = () => {
+        setIsDarkTheme( isDarkTheme => !isDarkTheme );
+    }
 
     useEffect(() => {
         setTimeout(async() => {
@@ -118,7 +109,6 @@ const AuthProvider = (props) => {
             } catch(e) {
                 console.log(e);
             }
-            // console.log('user token: ', userToken);
             dispatch({ type: 'RETRIEVE_TOKEN', token: userToken });
         }, 1000);
     }, []);
@@ -128,9 +118,9 @@ const AuthProvider = (props) => {
             value={{
                 loginState,
                 theme,
-                // signIn
-                // signOut,
-                // toggleTheme
+                signIn,
+                signOut,
+                toggleTheme
             }}
             {...props}
         />
