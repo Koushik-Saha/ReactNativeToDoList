@@ -11,6 +11,8 @@ import DetailsScreen from "./Components/DetailsScreen";
 
 const HomeStack = createStackNavigator();
 const DetailsStack = createStackNavigator();
+const ProfileStack = createStackNavigator();
+const ExploreStack = createStackNavigator();
 
 const Tab = createMaterialBottomTabNavigator();
 
@@ -44,7 +46,7 @@ const MainTabScreen = () => {
             />
             <Tab.Screen
                 name="Profile"
-                component={ProfileScreen}
+                component={ProfileStackScreen}
                 options={{
                     tabBarLabel: 'Profile',
                     tabBarColor: '#694fad',
@@ -55,7 +57,7 @@ const MainTabScreen = () => {
             />
             <Tab.Screen
                 name="Explore"
-                component={ExploreScreen}
+                component={ExploreStackScreen}
                 options={{
                     tabBarLabel: 'Explore',
                     tabBarColor: '#d02860',
@@ -105,4 +107,42 @@ const DetailsStackScreen = ({navigation}) => (
         )
         }} />
 </DetailsStack.Navigator>
+);
+
+const ProfileStackScreen = ({navigation}) => (
+    <ProfileStack.Navigator screenOptions={{
+        headerStyle: {
+            backgroundColor: '#009387',
+        },
+        headerTintColor: '#fff',
+        headerTitleStyle: {
+            fontWeight: 'bold'
+        }
+    }}>
+        <ProfileStack.Screen name="Profile" component={ProfileScreen} options={{
+            title:'Profile',
+            headerLeft: () => (
+                <Icon.Button name="ios-menu" size={25} backgroundColor="#009387" onPress={() => navigation.openDrawer()}/>
+            )
+        }} />
+    </ProfileStack.Navigator>
+);
+
+const ExploreStackScreen = ({navigation}) => (
+    <ExploreStack.Navigator screenOptions={{
+        headerStyle: {
+            backgroundColor: '#009387',
+        },
+        headerTintColor: '#fff',
+        headerTitleStyle: {
+            fontWeight: 'bold'
+        }
+    }}>
+        <ExploreStack.Screen name="Explore" component={ExploreScreen} options={{
+            title:'Explore',
+            headerLeft: () => (
+                <Icon.Button name="ios-menu" size={25} backgroundColor="#009387" onPress={() => navigation.openDrawer()}/>
+            )
+        }} />
+    </ExploreStack.Navigator>
 );
