@@ -128,6 +128,7 @@ const AuthProvider = (props) => {
             value={{
                 loginState,
                 theme,
+                // signIn
                 // signOut,
                 // toggleTheme
             }}
