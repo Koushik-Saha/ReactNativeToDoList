@@ -30,7 +30,6 @@ const Routes = () => {
         );
     }
 
-    console.log("abc")
     return (
         <PaperProvider theme={theme}>
             <NavigationContainer theme={theme}>
