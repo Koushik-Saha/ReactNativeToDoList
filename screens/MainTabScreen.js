@@ -37,7 +37,7 @@ const MainTabScreen = () => {
                 name="Notifications"
                 component={DetailsStackScreen}
                 options={{
-                    tabBarLabel: 'Updates',
+                    tabBarLabel: 'Details',
                     tabBarColor: '#1f65ff',
                     tabBarIcon: ({ color }) => (
                         <Icon name="ios-notifications" color={color} size={26} />
@@ -83,7 +83,7 @@ const HomeStackScreen = ({navigation}) => (
         }
     }}>
         <HomeStack.Screen name="Home" component={HomeScreen} options={{
-        title:'Overview',
+        title:'EBook',
         headerLeft: () => (
             <Icon.Button name="ios-menu" size={25} backgroundColor="#009387" onPress={() => navigation.openDrawer()}/>
         )
