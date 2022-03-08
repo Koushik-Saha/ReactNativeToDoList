@@ -34,13 +34,13 @@ const MainTabScreen = () => {
                 }}
             />
             <Tab.Screen
-                name="Notifications"
+                name="Details"
                 component={DetailsStackScreen}
                 options={{
                     tabBarLabel: 'Details',
                     tabBarColor: '#1f65ff',
                     tabBarIcon: ({ color }) => (
-                        <Icon name="ios-notifications" color={color} size={26} />
+                        <Icon name="document" color={color} size={26} />
                     ),
                 }}
             />
