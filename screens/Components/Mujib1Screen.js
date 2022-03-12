@@ -11,7 +11,7 @@ import {
 } from "native-base";
 import Icon from "react-native-vector-icons/AntDesign";
 
-const DetailsScreen = ({navigation}) => {
+const Mujib1Screen = ({navigation}) => {
     return (
         <ScrollView p={3} h="100">
             <Text fontSize="xs" color="red.500" fontWeight="medium">
@@ -75,5 +75,5 @@ const DetailsScreen = ({navigation}) => {
     );
 };
 
-export default DetailsScreen;
+export default Mujib1Screen;
 

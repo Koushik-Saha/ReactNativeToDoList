@@ -5,7 +5,6 @@ import {
     AspectRatio,
     Box,
     Center,
-    Container,
     Flex,
     Heading,
     HStack,
@@ -23,7 +22,7 @@ const HomeScreen = ({navigation}) => {
             <StatusBar barStyle={theme.dark ? "light-content" : "dark-content"}/>
             <ScrollView>
                 <VStack space={1.5} w="100%" px="1.5">
-                    <Pressable onPress={() => navigation.navigate("Details")}>
+                    <Pressable onPress={() => navigation.navigate("Mujib1")}>
                         <Flex direction="row" mb="2.5" mt="1.5">
                             <Center flex={1} px="1">
                                 <Box alignItems="center">

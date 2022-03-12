@@ -15,12 +15,12 @@ import MainTabScreen from "./screens/MainTabScreen";
 import SupportScreen from "./screens/SupportScreen";
 import SettingsScreen from "./screens/SettingsScreen";
 import BookmarkScreen from "./screens/BookmarkScreen";
-import DetailsScreen from "./screens/Components/DetailsScreen";
+import Mujib1Screen from "./screens/Components/Mujib1Screen";
 import Icon from "react-native-vector-icons/Ionicons";
 import {createStackNavigator} from "@react-navigation/stack";
 
 const Drawer = createDrawerNavigator();
-const DetailsStack = createStackNavigator();
+const Mujib1 = createStackNavigator();
 
 const Routes = () => {
 
@@ -43,7 +43,7 @@ const Routes = () => {
                             <Drawer.Screen name="SupportScreen" component={SupportScreen} />
                             <Drawer.Screen name="SettingsScreen" component={SettingsScreen} />
                             <Drawer.Screen name="BookmarkScreen" component={BookmarkScreen} />
-                            <Drawer.Screen name="Details" component={DetailsStackScreen} />
+                            <Drawer.Screen name="Mujib1" component={Mujib1StackScreen} />
                         </Drawer.Navigator>
                     )
                     :
@@ -57,8 +57,8 @@ const Routes = () => {
 export default Routes;
 
 
-const DetailsStackScreen = ({navigation}) => (
-    <DetailsStack.Navigator screenOptions={{
+const Mujib1StackScreen = ({navigation}) => (
+    <Mujib1.Navigator screenOptions={{
         headerStyle: {
             backgroundColor: '#1f65ff',
         },
@@ -67,10 +67,10 @@ const DetailsStackScreen = ({navigation}) => (
             fontWeight: 'bold'
         }
     }}>
-        <DetailsStack.Screen name="Details" component={DetailsScreen} options={{
+        <Mujib1.Screen name="Mujib1" component={Mujib1Screen} options={{
             headerLeft: () => (
                 <Icon.Button name="ios-menu" size={25} backgroundColor="#1f65ff" onPress={() => navigation.openDrawer()}/>
             )
         }} />
-    </DetailsStack.Navigator>
+    </Mujib1.Navigator>
 );

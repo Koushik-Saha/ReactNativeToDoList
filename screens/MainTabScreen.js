@@ -7,7 +7,7 @@ import Icon from 'react-native-vector-icons/Ionicons';
 import ProfileScreen from "./Components/ProfileScreen";
 import ExploreScreen from "./Components/ExploreScreen";
 import HomeScreen from "./Components/HomeScreen";
-import DetailsScreen from "./Components/DetailsScreen";
+import Mujib1Screen from "./Components/Mujib1Screen";
 
 const HomeStack = createStackNavigator();
 const DetailsStack = createStackNavigator();
@@ -34,10 +34,10 @@ const MainTabScreen = () => {
                 }}
             />
             <Tab.Screen
-                name="Details"
-                component={DetailsStackScreen}
+                name="Mujib1"
+                component={Mujib1StackScreen}
                 options={{
-                    tabBarLabel: 'Details',
+                    tabBarLabel: 'Mujib1',
                     tabBarColor: '#1f65ff',
                     tabBarIcon: ({ color }) => (
                         <Icon name="document" color={color} size={26} />
@@ -91,7 +91,7 @@ const HomeStackScreen = ({navigation}) => (
 </HomeStack.Navigator>
 );
 
-const DetailsStackScreen = ({navigation}) => (
+const Mujib1StackScreen = ({navigation}) => (
 <DetailsStack.Navigator screenOptions={{
         headerStyle: {
         backgroundColor: '#1f65ff',
@@ -101,7 +101,7 @@ const DetailsStackScreen = ({navigation}) => (
         fontWeight: 'bold'
         }
     }}>
-        <DetailsStack.Screen name="Details" component={DetailsScreen} options={{
+        <DetailsStack.Screen name="Mujib1" component={Mujib1Screen} options={{
         headerLeft: () => (
             <Icon.Button name="ios-menu" size={25} backgroundColor="#1f65ff" onPress={() => navigation.openDrawer()}/>
         )
