@@ -34,7 +34,7 @@ const MainTabScreen = () => {
                 }}
             />
             <Tab.Screen
-                name="Mujib1"
+                name="Mujib12"
                 component={Mujib1StackScreen}
                 options={{
                     tabBarLabel: 'Mujib1',
@@ -101,7 +101,7 @@ const Mujib1StackScreen = ({navigation}) => (
         fontWeight: 'bold'
         }
     }}>
-        <DetailsStack.Screen name="Mujib1" component={Mujib1Screen} options={{
+        <DetailsStack.Screen name="Mujib12" component={Mujib1Screen} options={{
         headerLeft: () => (
             <Icon.Button name="ios-menu" size={25} backgroundColor="#1f65ff" onPress={() => navigation.openDrawer()}/>
         )

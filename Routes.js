@@ -18,9 +18,11 @@ import BookmarkScreen from "./screens/BookmarkScreen";
 import Mujib1Screen from "./screens/Components/Mujib1Screen";
 import Icon from "react-native-vector-icons/Ionicons";
 import {createStackNavigator} from "@react-navigation/stack";
+import Mujib2Screen from "./screens/Components/Mujib2Screen";
 
 const Drawer = createDrawerNavigator();
 const Mujib1 = createStackNavigator();
+const Mujib2 = createStackNavigator();
 
 const Routes = () => {
 
@@ -44,6 +46,7 @@ const Routes = () => {
                             <Drawer.Screen name="SettingsScreen" component={SettingsScreen} />
                             <Drawer.Screen name="BookmarkScreen" component={BookmarkScreen} />
                             <Drawer.Screen name="Mujib1" component={Mujib1StackScreen} />
+                            <Drawer.Screen name="Mujib2" component={Mujib2StackScreen} />
                         </Drawer.Navigator>
                     )
                     :
@@ -73,4 +76,22 @@ const Mujib1StackScreen = ({navigation}) => (
             )
         }} />
     </Mujib1.Navigator>
+);
+
+const Mujib2StackScreen = ({navigation}) => (
+    <Mujib2.Navigator screenOptions={{
+        headerStyle: {
+            backgroundColor: '#1f65ff',
+        },
+        headerTintColor: '#fff',
+        headerTitleStyle: {
+            fontWeight: 'bold'
+        }
+    }}>
+        <Mujib2.Screen name="Mujib2" component={Mujib2Screen} options={{
+            headerLeft: () => (
+                <Icon.Button name="ios-menu" size={25} backgroundColor="#1f65ff" onPress={() => navigation.openDrawer()}/>
+            )
+        }} />
+    </Mujib2.Navigator>
 );

@@ -39,7 +39,7 @@ const HomeScreen = ({navigation}) => {
                                         <Box>
                                             <AspectRatio w="100%" ratio={16 / 9}>
                                                 <Image source={{
-                                                    uri: "https://www.holidify.com/images/cmsuploads/compressed/Bangalore_citycover_20190613234056.jpg"
+                                                    uri: "https://www.linkpicture.com/q/2_432.jpg"
                                                 }} alt="image"/>
                                             </AspectRatio>
                                             <Center bg="violet.500" _dark={{
@@ -134,7 +134,7 @@ const HomeScreen = ({navigation}) => {
                             </Center >
                         </Flex>
                     </Pressable>
-                    <Pressable onPress={() => navigation.navigate("Details")}>
+                    <Pressable onPress={() => navigation.navigate("Mujib2")}>
                         <Flex direction="row" mb="2.5" mt="1.5">
                             <Center flex={1} px="1">
                                 <Box alignItems="center">
@@ -246,7 +246,7 @@ const HomeScreen = ({navigation}) => {
                             </Center >
                         </Flex>
                     </Pressable>
-                    <Pressable onPress={() => navigation.navigate("Details")}>
+                    <Pressable onPress={() => navigation.navigate("Mujib2")}>
                         <Flex direction="row" mb="2.5" mt="1.5">
                             <Center flex={1} px="1">
                                 <Box alignItems="center">
