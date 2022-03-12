@@ -15,14 +15,14 @@ const DetailsScreen = ({navigation}) => {
     return (
         <ScrollView p={3} h="100">
             <Text fontSize="xs" color="red.500" fontWeight="medium">
-                HISTORY
+                শেখ মুজিবুর রহমান
             </Text>
             <Text fontSize="xl" fontWeight="medium">
-                Always forgave your enemies, nothing annoys
+                কলকাতায় হিন্দু-মুসলিম সাম্প্রদায়িক দাঙ্গার বিরুদ্ধে মহাত্মা গান্ধীর প্রতিবাদ
             </Text>
             <Flex justifyContent="space-between" flexDirection="row" mb="2.5" mt="1.5">
                 <Text fontSize="xs" fontWeight="medium" color="gray.500">
-                    Publish from <Text color="blue.500">iStudio</Text>
+                    Publish from <Text color="blue.500">mujib100</Text>
                 </Text>
                 <Spacer/>
                 <Text fontSize="xs" color="gray.500">
@@ -60,9 +60,12 @@ const DetailsScreen = ({navigation}) => {
                 </Box>
             </Flex>
             <Text fontSize="md" color="gray.500" mt={2}>
-                900 Rating on Google Play Store
+                5k+ Rating on Google
             </Text>
-            <Text mt={2} fontSize="sm" style={{textAlign: 'justify'}} mb={6}>
+            <Text mt={2} fontSize="sm" style={{textAlign: 'justify'}} mb={2}>
+                কলকাতায় হিন্দু-মুসলিম সাম্প্রদায়িক দাঙ্গার বিরুদ্ধে মহাত্মা গান্ধীর প্রতিবাদ সভায় তরুণ ছাত্র নেতা শেখ মুজিবুর রহমান (পেছনে দাঁড়ানো) এবং হোসেন শহীদ সোহরাওয়ার্দী (১৯৪৭)।
+            </Text>
+            <Text mt={1} fontSize="sm" style={{textAlign: 'justify'}} mb={6}>
                 জাতির জনক বঙ্গবন্ধু শেখ মুজিবুর রহমান ফরিদপুর জেলার গোপালগঞ্জ মহকুমার (বর্তমানে জেলা) টুঙ্গিপাড়া গ্রামে
                 এক সম্ভ্রান্ত মুসলিম পরিবারে ১৯২০ সালের ১৭ মার্চ জন্মগ্রহণ করেন। শেখ লুৎফর রহমান ও মোসাম্মৎ সাহারা
                 খাতুনের চার কন্যা ও দুই পুত্রের মধ্যে তৃতীয় সন্তান শেখ মুজিব। বাবা-মা ডাকতেন খোকা বলে। খোকার শৈশবকাল
