@@ -19,10 +19,11 @@ import Mujib1Screen from "./screens/Components/Mujib1Screen";
 import Icon from "react-native-vector-icons/Ionicons";
 import {createStackNavigator} from "@react-navigation/stack";
 import Mujib2Screen from "./screens/Components/Mujib2Screen";
+import Mujib3Screen from "./screens/Components/Mujib3Screen";
+import Mujib4Screen from "./screens/Components/Mujib4Screen";
 
 const Drawer = createDrawerNavigator();
-const Mujib1 = createStackNavigator();
-const Mujib2 = createStackNavigator();
+const Details = createStackNavigator();
 
 const Routes = () => {
 
@@ -47,6 +48,8 @@ const Routes = () => {
                             <Drawer.Screen name="BookmarkScreen" component={BookmarkScreen} />
                             <Drawer.Screen name="Mujib1" component={Mujib1StackScreen} />
                             <Drawer.Screen name="Mujib2" component={Mujib2StackScreen} />
+                            <Drawer.Screen name="Mujib3" component={Mujib3StackScreen} />
+                            <Drawer.Screen name="Mujib4" component={Mujib4StackScreen} />
                         </Drawer.Navigator>
                     )
                     :
@@ -61,7 +64,7 @@ export default Routes;
 
 
 const Mujib1StackScreen = ({navigation}) => (
-    <Mujib1.Navigator screenOptions={{
+    <Details.Navigator screenOptions={{
         headerStyle: {
             backgroundColor: '#1f65ff',
         },
@@ -70,16 +73,16 @@ const Mujib1StackScreen = ({navigation}) => (
             fontWeight: 'bold'
         }
     }}>
-        <Mujib1.Screen name="Mujib1" component={Mujib1Screen} options={{
+        <Details.Screen name="Mujib1" component={Mujib1Screen} options={{
             headerLeft: () => (
                 <Icon.Button name="ios-menu" size={25} backgroundColor="#1f65ff" onPress={() => navigation.openDrawer()}/>
             )
         }} />
-    </Mujib1.Navigator>
+    </Details.Navigator>
 );
 
 const Mujib2StackScreen = ({navigation}) => (
-    <Mujib2.Navigator screenOptions={{
+    <Details.Navigator screenOptions={{
         headerStyle: {
             backgroundColor: '#1f65ff',
         },
@@ -88,10 +91,46 @@ const Mujib2StackScreen = ({navigation}) => (
             fontWeight: 'bold'
         }
     }}>
-        <Mujib2.Screen name="Mujib2" component={Mujib2Screen} options={{
+        <Details.Screen name="Mujib2" component={Mujib2Screen} options={{
             headerLeft: () => (
                 <Icon.Button name="ios-menu" size={25} backgroundColor="#1f65ff" onPress={() => navigation.openDrawer()}/>
             )
         }} />
-    </Mujib2.Navigator>
+    </Details.Navigator>
+);
+
+const Mujib3StackScreen = ({navigation}) => (
+    <Details.Navigator screenOptions={{
+        headerStyle: {
+            backgroundColor: '#1f65ff',
+        },
+        headerTintColor: '#fff',
+        headerTitleStyle: {
+            fontWeight: 'bold'
+        }
+    }}>
+        <Details.Screen name="Mujib3" component={Mujib3Screen} options={{
+            headerLeft: () => (
+                <Icon.Button name="ios-menu" size={25} backgroundColor="#1f65ff" onPress={() => navigation.openDrawer()}/>
+            )
+        }} />
+    </Details.Navigator>
+);
+
+const Mujib4StackScreen = ({navigation}) => (
+    <Details.Navigator screenOptions={{
+        headerStyle: {
+            backgroundColor: '#1f65ff',
+        },
+        headerTintColor: '#fff',
+        headerTitleStyle: {
+            fontWeight: 'bold'
+        }
+    }}>
+        <Details.Screen name="Mujib3" component={Mujib4Screen} options={{
+            headerLeft: () => (
+                <Icon.Button name="ios-menu" size={25} backgroundColor="#1f65ff" onPress={() => navigation.openDrawer()}/>
+            )
+        }} />
+    </Details.Navigator>
 );

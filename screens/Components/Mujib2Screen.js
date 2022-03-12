@@ -32,7 +32,7 @@ const Mujib2Screen = ({navigation}) => {
             <Box>
                 <AspectRatio w="100%" ratio={16 / 9}>
                     <Image source={{
-                        uri: "https://www.linkpicture.com/q/2_432.jpg"
+                        uri: "https://www.linkpicture.com/q/5_282.jpg"
                     }} alt="image"/>
                 </AspectRatio>
                 <Center bg="violet.500" _dark={{

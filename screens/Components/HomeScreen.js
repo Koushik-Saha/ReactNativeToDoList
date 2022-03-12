@@ -138,9 +138,9 @@ const HomeScreen = ({navigation}) => {
                             </Pressable>
                         </Center>
                     </Flex>
-                    <Pressable onPress={() => navigation.navigate("Mujib2")}>
-                        <Flex direction="row" mb="2.5" mt="1.5">
-                            <Center flex={1} px="1">
+                    <Flex direction="row" mb="2.5" mt="1.5">
+                        <Center flex={1} px="1">
+                            <Pressable onPress={() => navigation.navigate("Mujib3")}>
                                 <Box alignItems="center">
                                     <Box maxW="80" rounded="lg" overflow="hidden" borderColor="coolGray.200"
                                          borderWidth="1"
@@ -156,7 +156,7 @@ const HomeScreen = ({navigation}) => {
                                         <Box>
                                             <AspectRatio w="100%" ratio={16 / 9}>
                                                 <Image source={{
-                                                    uri: "https://www.holidify.com/images/cmsuploads/compressed/Bangalore_citycover_20190613234056.jpg"
+                                                    uri: "https://www.linkpicture.com/q/7_222.jpg"
                                                 }} alt="image"/>
                                             </AspectRatio>
                                             <Center bg="violet.500" _dark={{
@@ -172,14 +172,14 @@ const HomeScreen = ({navigation}) => {
                                         <Stack p="3" space={0}>
                                             <Stack space={0}>
                                                 <Heading size="sm" ml="-1">
-                                                    The Garden City
+                                                    শেখ মুজিবুর রহমান
                                                 </Heading>
                                                 <Text fontSize="xs" _light={{
                                                     color: "violet.500"
                                                 }} _dark={{
                                                     color: "violet.400"
                                                 }} ml="-0.5" mt="-1">
-                                                    The Silicon Valley of India.
+                                                    রাজনৈতিক সহকর্মীদের সাথে শেখ মুজিবুর রহমান (১৯৫২)।
                                                 </Text>
                                             </Stack>
                                             <HStack alignItems="center" space={4} justifyContent="space-between">
@@ -194,8 +194,10 @@ const HomeScreen = ({navigation}) => {
                                         </Stack>
                                     </Box>
                                 </Box>
-                            </Center>
-                            <Center flex={1} px="1">
+                            </Pressable>
+                        </Center>
+                        <Center flex={1} px="1">
+                            <Pressable onPress={() => navigation.navigate("Mujib4")}>
                                 <Box alignItems="center">
                                     <Box maxW="80" rounded="lg" overflow="hidden" borderColor="coolGray.200"
                                          borderWidth="1"
@@ -211,7 +213,7 @@ const HomeScreen = ({navigation}) => {
                                         <Box>
                                             <AspectRatio w="100%" ratio={16 / 9}>
                                                 <Image source={{
-                                                    uri: "https://www.holidify.com/images/cmsuploads/compressed/Bangalore_citycover_20190613234056.jpg"
+                                                    uri: "https://www.linkpicture.com/q/31_58.jpg"
                                                 }} alt="image"/>
                                             </AspectRatio>
                                             <Center bg="violet.500" _dark={{
@@ -227,14 +229,14 @@ const HomeScreen = ({navigation}) => {
                                         <Stack p="3" space={0}>
                                             <Stack space={0}>
                                                 <Heading size="sm" ml="-1">
-                                                    The Garden City
+                                                    আওয়ামী লীগের সাত নারী নেত্রী
                                                 </Heading>
                                                 <Text fontSize="xs" _light={{
                                                     color: "violet.500"
                                                 }} _dark={{
                                                     color: "violet.400"
                                                 }} ml="-0.5" mt="-1">
-                                                    The Silicon Valley of India.
+                                                    সত্তরের নির্বাচন শুনছেন বঙ্গবন্ধু শেখ মুজিবুর রহমান
                                                 </Text>
                                             </Stack>
                                             <HStack alignItems="center" space={4} justifyContent="space-between">
@@ -249,9 +251,9 @@ const HomeScreen = ({navigation}) => {
                                         </Stack>
                                     </Box>
                                 </Box>
-                            </Center>
-                        </Flex>
-                    </Pressable>
+                            </Pressable>
+                        </Center>
+                    </Flex>
                     <Pressable onPress={() => navigation.navigate("Mujib2")}>
                         <Flex direction="row" mb="2.5" mt="1.5">
                             <Center flex={1} px="1">
