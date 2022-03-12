@@ -56,14 +56,14 @@ const HomeScreen = ({navigation}) => {
                                         <Stack p="3" space={0}>
                                             <Stack space={0}>
                                                 <Heading size="sm" ml="-1">
-                                                    The Garden City
+                                                    কলকাতায় হিন্দু-মুসলিম সাম্প্রদায়িক...
                                                 </Heading>
                                                 <Text fontSize="xs" _light={{
                                                     color: "violet.500"
                                                 }} _dark={{
                                                     color: "violet.400"
                                                 }} ml="-0.5" mt="-1">
-                                                    The Silicon Valley of India.
+                                                    ছাত্র নেতা শেখ মুজিবুর রহমান (পেছনে দাঁড়ানো)
                                                 </Text>
                                             </Stack>
                                             <HStack alignItems="center" space={4} justifyContent="space-between">
@@ -97,7 +97,7 @@ const HomeScreen = ({navigation}) => {
                                         <Box>
                                             <AspectRatio w="100%" ratio={16 / 9}>
                                                 <Image source={{
-                                                    uri: "https://www.holidify.com/images/cmsuploads/compressed/Bangalore_citycover_20190613234056.jpg"
+                                                    uri: "https://www.linkpicture.com/q/5_282.jpg"
                                                 }} alt="image"/>
                                             </AspectRatio>
                                             <Center bg="violet.500" _dark={{
@@ -113,14 +113,14 @@ const HomeScreen = ({navigation}) => {
                                         <Stack p="3" space={0}>
                                             <Stack space={0}>
                                                 <Heading size="sm" ml="-1">
-                                                    The Garden City
+                                                    হোসেন শহীদ সোহরাওয়ার্দীর সঙ্গে...
                                                 </Heading>
                                                 <Text fontSize="xs" _light={{
                                                     color: "violet.500"
                                                 }} _dark={{
                                                     color: "violet.400"
                                                 }} ml="-0.5" mt="-1">
-                                                    The Silicon Valley of India.
+                                                    শেখ মুজিবুর রহমান (১৯৪৯)
                                                 </Text>
                                             </Stack>
                                             <HStack alignItems="center" space={4} justifyContent="space-between">
